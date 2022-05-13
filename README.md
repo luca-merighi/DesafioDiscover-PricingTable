@@ -12,4 +12,4 @@ A página possuí semântica e responsividade.
 </div>
 <br/>
 
-### [Link para a Página]( "Pricing Table")
+### [Link para a Página](https://luca-merighi.github.io/DesafioDiscover-PricingTable/ "Pricing Table")
