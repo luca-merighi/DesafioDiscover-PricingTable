@@ -1,0 +1,151 @@
+.cards-container {
+    margin-top: -6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: center;
+
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 5rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+    align-items: center;
+    padding: 1.8rem;
+    height: 470px;
+    width: 365px;
+    position: relative;
+
+    border-radius: 8px;
+    background-color: var(--white);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.price p:first-of-type {
+    color: var(--black);
+    font-weight: 600;
+}
+
+.price p:nth-of-type(2) {
+    color: var(--black);
+    font-weight: 600;
+    font-size: 1.875rem;
+}
+
+.price p:nth-of-type(2) span:first-of-type {
+    font-size: 1rem;
+}
+
+.price p:nth-of-type(2) span:last-of-type {
+    font-weight: 500;   
+    color: var(--grey);
+    font-size: 1rem;
+}
+
+.price p:last-of-type {
+    color: var(--grey);
+    font-size: 0.875rem;
+}
+
+.divider {
+    height: 2px;
+    width: 100%;
+    background-color: #eee;
+}
+
+.benefits-list {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.benefits-list li {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.benefits-list li img {
+    width: 1rem;
+}
+
+.benefits-list li span {
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: var(--grey);
+}
+
+.sign-up-plan {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.5rem 0;
+
+    position: absolute;
+    bottom: 1.8rem;
+    left: 1.8rem;
+    right: 1.8rem;
+
+    font-weight: 600;
+    color: var(--blue);
+    border-radius: 10px;
+    border: 2px solid var(--blue);
+    transition: background 0.3s;
+}
+
+.sign-up-plan:hover {
+    background-color: var(--page-background);
+}
+
+/* Second Card */
+.card:nth-of-type(2) .price {
+    position: relative;
+}
+
+.card:nth-of-type(2) .price .sign {
+    position: absolute;
+    right: 0;
+
+    padding: 0.5rem 0.875rem;
+    border-radius: 40px;
+    background-color: var(--yellow);
+
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.card:nth-of-type(2) .sign-up-plan {
+    background-color: var(--blue);
+    color: var(--white);
+    transition: background 0.3s, color 0.3s, border 0.3s;
+}
+
+.card:nth-of-type(2) .sign-up-plan:hover {
+    background-color: var(--white);
+    color: var(--blue);
+    border: 2px solid var(--blue);
+}
+
+@media(min-width: 820px) {
+    .cards-container {
+        margin-top: -8rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

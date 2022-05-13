@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white: #fff;
+    --page-background: #f9fbfc;
+    --grey: #828799;
+    --black: #1E2338;
+
+    --yellow: #ffcc29;
+    --blue: #1d539e;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--page-background);
+}
